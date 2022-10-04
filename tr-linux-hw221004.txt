@@ -1,0 +1,15 @@
+   0 mkdir -p /home/user/start/
+   1 > /home/user/start/1.txt
+   2 echo "Start" >> /home/user/start/1.txt
+   3 date >> /home/user/start/1.txt
+   4 mkdir /opt/task/
+   5 cp /home/user/start/1.txt /opt/task/start.txt
+   6 ls -la / | tail -4 >> /opt/task/start.txt
+   7 cat /opt/task/start.txt
+   8 touch chmodFile.txt
+   9 date > chmodFile.txt
+  10 ls -l chmodFile.txt
+  11 chmod 744 chmodFile.txt
+  12 chmod o-r chmodFile.txt
+  13 ls -l chmodFile.txt
+  14 history > /tmp/tr-linux-hw221004.txt
