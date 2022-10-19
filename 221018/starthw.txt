@@ -1,0 +1,17 @@
+#!/bin/bash
+echo "this script create a working subdirektory and ex. file for current HW"
+#Ввести имя новой рабочей папки
+newdir=221018
+#Ввести имя скрипта
+newscript=sleeper.sh
+finishscript=finish.sh
+
+mkdir /opt/37_38_MA/molchanova/$newdir
+touch /opt/37_38_MA/molchanova/$newdir/$newscript
+chmod u+rwx /opt/37_38_MA/molchanova/$newdir/$newscript
+
+touch /opt/37_38_MA/molchanova/$newdir/$finishscript
+chmod 744 /opt/37_38_MA/molchanova/$newdir/$finishscript
+
+echo "папка $newdir и файлы $newscript и $finishscript созданы"
+

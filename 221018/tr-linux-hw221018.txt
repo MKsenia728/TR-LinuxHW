@@ -1,0 +1,28 @@
+#!/bin/bash
+# task 1,2
+for i in {1..10}
+do
+date +"%H:%M:%S"
+echo "This is output № $i"
+#sleep 5
+sleep 1
+done
+
+#task 4,5
+echo "Info about CPU" > info.txt
+lscpu >> info.txt
+echo "Info about CPU has written to info.txt"
+echo "Info about OS" >> info.txt
+cat /etc/*release | head -1 >> info.txt
+cat /etc/*release | head -1 | sed 's/"/ /' | awk '{print $2}' >> info.txt
+echo "Info about OS has written to info.txt"
+
+#task 6
+f=50
+l=100
+for filename in {50..100}
+do
+touch $filename.txt
+done
+echo "Created files from $f.txt to $l.txt"
+
