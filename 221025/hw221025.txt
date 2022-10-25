@@ -1,0 +1,9 @@
+#!/bin/bash
+
+for num in {1..10}
+do
+datepart=$(date +"%d%m%y")
+touch /opt/37_38_MA/molchanova/221025/temp_files/$num$datepart.txt
+done
+
+#*/15 * * * * /opt/37_38_MA/molchanova/221025/taskOKSANA.sh
